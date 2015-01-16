@@ -1,2 +1,2 @@
 # helloweather
-Android application weather
+Android simple weather application
