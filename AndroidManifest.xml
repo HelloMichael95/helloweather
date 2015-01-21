@@ -28,6 +28,15 @@
         <activity 
             android:name="com.helloweather.app.activity.WeatherActivity">            
         </activity>
+        
+        <service 
+            android:name="com.helloweather.app.service.AutoUpdateServic">
+        </service>  
+    
+        <receiver 
+            android:name="com.helloweather.app.receiver.AutoUpdateReceiver">            
+        </receiver>
+        
     </application>
 
 </manifest>

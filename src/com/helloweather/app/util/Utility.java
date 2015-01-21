@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.helloweather.app.db.HelloWeatherDB;
 import com.helloweather.app.model.City;
@@ -103,6 +104,7 @@ public class Utility {
 	 */
 	public static void handleWeatherResponse(Context context, String response) {
 		try {
+Log.d("MainActivity", response);			
 			JSONObject jsonObject = new JSONObject(response);
 			JSONObject weatherInfo = jsonObject.getJSONObject("weatherinfo");
 			String cityName = weatherInfo.getString("city");
